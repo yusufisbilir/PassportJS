@@ -1,0 +1,16 @@
+<div class="card">
+    <h5 class="card-header">Users</h5>
+
+    <div class="card-body">
+        <ul class="list-group">
+            {{#each users}}
+                <li class="list-group-item">{{username}}</li>
+
+                {{else}}
+                <div class="alert alert-info">
+                    There is no registered user
+                </div>
+            {{/each}}
+        </ul>
+    </div>
+</div>
